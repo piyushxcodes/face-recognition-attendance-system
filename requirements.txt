@@ -1,0 +1,11 @@
+Django==5.1.7
+numpy==2.2.4
+opencv-python==4.11.0.86
+opencv-contrib-python==4.11.0.86
+pandas==2.2.3
+Pillow==11.1.0
+
+"""cd "D:\BTECH(STUDY STUFF)\face_attendance"
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver"""

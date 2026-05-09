@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="text-center mb-5">
+    <h1 class="display-5 fw-bold">Face Recognition Attendance System</h1>
+    <p class="lead">Smart student attendance using Django + OpenCV + LBPH</p>
+</div>
+
+<div class="row g-4">
+
+    <div class="col-md-6">
+        <div class="card shadow-lg border-0 h-100">
+            <div class="card-body text-center">
+                <h3>Total Registered Students</h3>
+                <h1 class="display-4">{{ total_students }}</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-lg border-0 h-100">
+            <div class="card-body text-center">
+                <h3>Total Attendance Records</h3>
+                <h1 class="display-4">{{ total_attendance }}</h1>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mt-5 g-4">
+
+    <div class="col-md-4">
+        <a href="/register/" class="btn btn-primary w-100 py-3 shadow">
+            Register New Student
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a href="/train/" class="btn btn-success w-100 py-3 shadow">
+            Train Model
+        </a>
+    </div>
+
+    <div class="col-md-4">
+        <a href="/attendance/" class="btn btn-danger w-100 py-3 shadow">
+            Take Attendance
+        </a>
+    </div>
+
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <a href="/reports/" class="btn btn-dark w-100 py-3 shadow">
+            View Attendance Reports
+        </a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+body {
+    background-color: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer {
+    font-size: 14px;
+}
+
+table th,
+table td {
+    vertical-align: middle !important;
+}

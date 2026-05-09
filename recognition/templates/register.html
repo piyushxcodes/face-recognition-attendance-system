@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+
+        <div class="card shadow-lg border-0">
+            <div class="card-body p-4">
+
+                <h2 class="text-center mb-4">Register New Student</h2>
+
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label class="form-label">Student ID</label>
+                        {{ form.student_id }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        {{ form.name }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Department</label>
+                        {{ form.department }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Admin Password</label>
+                        {{ form.admin_password }}
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-2">
+                        Register & Capture Face
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
